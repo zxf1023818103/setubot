@@ -3,3 +3,5 @@
 .dockerignore
 .vscode
 node_modules
+doc
+*.md
