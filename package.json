@@ -1,0 +1,21 @@
+{
+  "name": "setubot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node --inspect=0.0.0.0:9229 --trace-deprecation --trace-warnings ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "connect-redis": "^5.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "helmet": "^3.23.3",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.1",
+    "redis": "^3.0.2",
+    "twitter-autohook": "^1.7.1"
+  }
+}

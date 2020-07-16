@@ -1,0 +1,21 @@
+FROM node:slim
+
+ENV PORT 3000
+ENV LARK_APP_ID cli_9f82f43d20fd500b
+ENV LARK_APP_SECRET pUik8Mj0MzZJXVOkuSXnCgyW2bNwk7pN
+ENV LARK_ENCRYPT_KEY V5QvlP8KRVrJiuTB1zakVgYH0nBlMXux
+ENV LARK_VERIFICATION_TOKEN CKEz3aeO7ohWowf2LVzYNcPnEHcEyJZ5
+
+COPY . /app
+
+#VOLUME /app/node_modules
+
+WORKDIR /app
+
+RUN npm install
+
+#RUN npm install -g pm2
+
+EXPOSE 3000 9229
+
+CMD ["npm", "start"]
