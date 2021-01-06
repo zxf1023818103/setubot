@@ -6,7 +6,7 @@
     "start": "node --inspect=0.0.0.0:9229 --trace-deprecation --trace-warnings ./bin/www"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "connect-redis": "^5.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
